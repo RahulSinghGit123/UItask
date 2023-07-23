@@ -10,7 +10,7 @@ export default function Midpart() {
         <div className="md:hidden flex justify-end p-2">
           <FiBell className="h-10 w-8 text-gray-500" />
         </div>
-        <div className="pt-10">
+        <div className="md:pt-10">
           <p className="font-bold text-indigo-600">Retirement Income</p>
           <p className="text-2xl font-serif font-bold">Starting Year 2006</p>
         </div>
