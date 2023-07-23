@@ -5,12 +5,12 @@ import NavDown from './navDown';
 
 export default function Profile() {
   return (
-    <div>
+    <div className="px-8 md:px-0">
       <div className="md:hidden flex justify-end p-2">
       <FiBell className="h-10 w-8 text-gray-500" />
       </div>
-      <div className="grid md:h-full md:bg-gray-100 md:p-16 p-6 space-y-6">
-        <div className="flex space-x-4 items-center">
+      <div className="grid md:h-full md:bg-gray-100 md:p-16 p-2 space-y-6">
+        <div className="flex space-x-4 px-6 items-center">
           <div>
             <img
               src="/favicon.ico"
@@ -23,7 +23,7 @@ export default function Profile() {
             <p className="font-serif text-gray-400">welcome back,</p>
           </div>
         </div>
-        <div className="space-y-4 ml-6 bg-gray-50 md:bg-gray-100 p-4 rounded-3xl">
+        <div className="space-y-4 md:ml-6 pl-10 md:pl-0 bg-gray-50 md:bg-gray-100 p-4 rounded-3xl">
           <div className="font-serif text-lg font-bold">Today</div>
           <div className="grid space-y-2">
             <span className="text-4xl font-bold">$19,892</span>
@@ -42,17 +42,17 @@ export default function Profile() {
             <AiFillCaretDown/>
           </button>
         </div>
-        <div className="bg-gray-50 md:bg-gray-100 p-4 rounded-3xl space-y-6 divide-y ml-6">
+        <div className="bg-gray-50 md:bg-gray-100 p-4 rounded-3xl space-y-6 divide-y md:ml-6 pl-10 md:pl-0">
           <p className="font-family text-lg font-bold">Recent Transaction</p>
           <div className="grid ">
             <span className="text-md text-gray-400 text-sm font-bold">2020-08-07</span>
             <span className="font-serif text-md font-bold">Withdrawal Transfer To Bank-XXX11</span>
           </div>
-          <div className="hidden md:blockgrid">
+          <div className="hidden md:block">
             <span className="text-gray-400 text-sm font-bold">2020-07-21</span>
             <span className="font-family text-sm font-bold">Withdrawal Transfer To Bank-XXX11</span>
           </div>
-          <div className="grid">
+          <div className="hidden md:block">
             <span className="text-gray-400 text-sm font-bold">2020-07-16</span>
             <span className="font-family text-sm font-bold">Withdrawal Transfer To Bank-XXX11</span>
           </div>

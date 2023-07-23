@@ -1,10 +1,13 @@
 import React from "react";
-import { AiFillCaretDown } from "react-icons/ai";
+import { AiFillCaretDown, AiOutlineClose } from "react-icons/ai";
 import Circlepercentage from "./circlepercentage";
 
 export default function Lastpart() {
   return (
-    <>
+    <div>
+      <div className="grid justify-items-end p-2 mr-4">
+        <AiOutlineClose className="h-8 w-8"/>
+      </div>
       <div className="md:hidden mb-8 p-4">
         <div>
           <p className="text-xl font-serif">How do I compare to my peers ?</p>
@@ -114,6 +117,6 @@ export default function Lastpart() {
       <button className="md:hidden bg-indigo-600 text-white text-md w-full h-12">
         Update
       </button>
-    </>
+    </div>
   );
 }

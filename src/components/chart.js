@@ -10,13 +10,12 @@ import {
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
 export default function Barchart() {
-
   const data = {
-    labels: ['$0','$100','$300','$0','$100','$300'],
+    labels: ["$0", "$100", "$300", "$0", "$100", "$300"],
     datasets: [
       {
         label: "",
-        data: [20,25,34,40,60,65],
+        data: [20, 25, 34, 40, 60, 65],
         backgroundColor: [
           "rgba(249, 19, 19, 0.8)",
           "rgba(12, 165, 221, 0.87)",
@@ -32,10 +31,27 @@ export default function Barchart() {
   };
   return (
     <>
-        <div className="h-56 md:h-96">
+        <div className="h-64 md:h-96">
           <p className="text-2xl font-bold">Contribution Overtime</p>
-          <Bar type="bar" height={300} width={400} data={data} />
-        </div>
+        {/* <div className="md:hidden flex justify-between items-center">
+          <div className="py-1">
+            <div className="px-1 h-2 w-4 rounded bg-indigo-600"></div>
+            <p className="text-gray-400">Imployer</p>
+            <p className="text-gray-400 text-sm font-bold ">$73,500</p>
+          </div>
+          <div className="py-1">
+            <div className="px-1 h-2 w-4 rounded bg-indigo-600"></div>
+            <p className="text-gray-400">59%</p>
+            <p className="text-gray-400 text-sm font-bold ">Goal Achieved</p>
+          </div>
+          <div className="py-1">
+            <div className="px-1 h-2 w-4 rounded bg-indigo-600"></div>
+            <p className="text-gray-400">59%</p>
+            <p className="">Goal Achieved</p>
+          </div>
+        </div> */}
+        <Bar type="bar" height={300} width={400} data={data} />
+      </div>
     </>
   );
 }

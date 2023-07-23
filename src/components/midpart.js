@@ -50,23 +50,23 @@ export default function Midpart() {
               These numbers represent current goal achievement
             </p>
           </div>
-          <div className="md:flex md:space-x-16">
+          <div className="md:flex md:space-x-10">
             <div className="divide-y">
-              <div className="flex items-center md:justify-between space-x-2 md:p-4 py-4">
+              <div className="flex space-x-2 py-4">
                 <span className="mr-10 md:mr-0">Age :</span>
                 <span>Under 30</span>
                 <span>
                   <AiFillCaretDown />
                 </span>
               </div>
-              <div className="flex items-center md:justify-between space-x-2 md:p-4 py-4">
+              <div className="flex space-x-2 py-4">
                 <span className="mr-10 md:mr-0">Salary :</span>
                 <span>20k-30k</span>
                 <span>
                   <AiFillCaretDown />
                 </span>
               </div>
-              <div className="flex items-center md:justify-between space-x-2 md:p-4 py-4">
+              <div className="flex space-x-2 py-4">
                 <span className="mr-10 md:mr-0">Gender :</span>
                 <span>Male </span>
                 <span>
