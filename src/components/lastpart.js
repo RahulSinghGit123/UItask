@@ -5,7 +5,7 @@ import Circlepercentage from "./circlepercentage";
 export default function Lastpart() {
   return (
     <div>
-      <div className="grid justify-items-end p-2 mr-4">
+      <div className="md:hidden grid justify-items-end p-2 mr-4">
         <AiOutlineClose className="h-8 w-8"/>
       </div>
       <div className="md:hidden mb-8 p-4">
